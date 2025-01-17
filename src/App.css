@@ -2,76 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-  font-family: "Silk Serif Black";   /*Can be any text*/
-  src: local("Silk Serif Black"),
-  url("silk-serif/Silk Serif Black.otf") format("truetype");
+  font-family: "Silk-Serif";
+  src: url("../silk-serif/Silk-Serif-ExtraLight.otf") format("truetype");
+  font-weight: 100;
+  font-style:normal
 }
 @font-face {
-  font-family: "Silk Serif Black Italic";   /*Can be any text*/
-  src: local("Silk Serif Black Italic"),
-  url("silk-serif/Silk Serif Black Italic.otf") format("truetype");
+  font-family: "Silk-Serif";
+  src: url("../silk-serif/Silk-Serif-ExtraLight-Italic.otf") format("truetype");
+  font-weight: 100;
+  font-style:italic;
+}@font-face {
+  font-family: "Silk-Serif";
+  src: url("../silk-serif/Silk-Serif-Light.otf") format("truetype");
+  font-weight: 200;
+  font-style:normal
 }
 @font-face {
-  font-family: "Silk Serif Bold";   /*Can be any text*/
-  src: local("Silk Serif Bold"),
-  url("silk-serif/Silk Serif Bold.otf") format("truetype");
+  font-family: "Silk-Serif";
+  src: url("../silk-serif/Silk-Serif-Light-Italic.otf") format("truetype");
+  font-weight: 200;
+  font-style:italic;
+}@font-face {
+  font-family: "Silk-Serif";
+  src: url("../silk-serif/Silk-Serif-Medium.otf") format("truetype");
+  font-weight: 300;
+  font-style:normal
 }
 @font-face {
-  font-family: "Silk Serif Bold Italic";   /*Can be any text*/
-  src: local("Silk Serif Bold Italic"),
-  url("silk-serif/Silk Serif Bold Italic.otf") format("truetype");
+  font-family: "Silk-Serif";
+  src: url("../silk-serif/Silk-Serif-Medium-Italic.otf") format("truetype");
+  font-weight: 300;
+  font-style:italic;
+}@font-face {
+  font-family: "Silk-Serif";
+  src: url("../silk-serif/Silk-Serif-Regular.otf") format("truetype");
+  font-weight: 400;
+  font-style:normal
 }
 @font-face {
-  font-family: "Silk Serif ExtraLight";   /*Can be any text*/
-  src: local("Silk Serif ExtraLight"),
-  url("silk-serif/Silk Serif ExtraLight.otf") format("truetype");
+  font-family: "Silk-Serif";
+  src: url("../silk-serif/Silk-Serif-Regular-Italic.otf") format("truetype");
+  font-weight: 400;
+  font-style:italic;
 }
 @font-face {
-  font-family: "Silk Serif ExtraLight Italic";   /*Can be any text*/
-  src: local("Silk Serif ExtraLight Italic"),
-  url("silk-serif/Silk Serif ExtraLight Italic.otf") format("truetype");
+  font-family: "Silk-Serif";
+  src: url("../silk-serif/Silk-Serif-SemiBold.otf") format("truetype");
+  font-weight: 500;
+  font-style:normal
 }
 @font-face {
-  font-family: "Silk Serif Light";   /*Can be any text*/
-  src: local("Silk Serif Light"),
-  url("silk-serif/Silk Serif Light.otf") format("truetype");
+  font-family: "Silk-Serif";
+  src: url("../silk-serif/Silk-Serif-SemiBold-Italic.otf") format("truetype");
+  font-weight: 500;
+  font-style:italic;
 }
 @font-face {
-  font-family: "Silk Serif Light Italic";   /*Can be any text*/
-  src: local("Silk Serif Light Italic"),
-  url("silk-serif/Silk Serif Light Italic.otf") format("truetype");
+  font-family: "Silk-Serif";
+  src: url("../silk-serif/Silk-Serif-Bold.otf") format("truetype");
+  font-weight: 600;
+  font-style:normal
 }
 @font-face {
-  font-family: "Silk Serif Medium";   /*Can be any text*/
-  src: local("Silk Serif Medium"),
-  url("silk-serif/Silk Serif Medium.otf") format("truetype");
+  font-family: "Silk-Serif";
+  src: url("../silk-serif/Silk-Serif-Bold-Italic.otf") format("truetype");
+  font-weight: 600;
+  font-style:italic;
 }
 @font-face {
-  font-family: "Silk Serif Medium Italic";   /*Can be any text*/
-  src: local("Silk Serif Medium Italic"),
-  url("silk-serif/Silk Serif Medium Italic.otf") format("truetype");
+  font-family: "Silk-Serif";
+  src: url("../silk-serif/Silk-Serif-Black.otf") format("truetype");
+  font-weight: 700;
+  font-style:normal
 }
 @font-face {
-  font-family: "Silk Serif Regular";   /*Can be any text*/
-  src: local("Silk Serif Regular"),
-  url("silk-serif/Silk Serif Regular.otf") format("truetype");
-}
-@font-face {
-  font-family: "Silk Serif Regular Italic";   /*Can be any text*/
-  src: local("Silk Serif Regular Italic"),
-  url("silk-serif/Silk Serif Regular Italic.otf") format("truetype");
-}
-@font-face {
-  font-family: "Silk Serif SemiBold";   /*Can be any text*/
-  src: local("Silk Serif SemiBold"),
-  url("silk-serif/Silk Serif SemiBold.otf") format("truetype");
-}
-@font-face {
-  font-family: "Silk Serif SemiBold Italic";   /*Can be any text*/
-  src: local("Silk Serif SemiBold Italic"),
-  url("silk-serif/Silk Serif SemiBold Italic.otf") format("truetype");
+  font-family: "Silk-Serif";
+  src: url("../silk-serif/Silk-Serif-Black-Italic.otf") format("truetype");
+  font-weight: 700;
+  font-style:italic;
 }
 
 .card {
@@ -85,7 +95,8 @@ html{
   font-size: 18rem;
   margin-top: 10rem;
   margin-bottom: -14.4rem;
-  font-family: "Silk Serif ExtraLight",serif;
+  font-family: "Silk-Serif", serif;
+  font-weight: 100;
   position: relative;
   z-index: -1;
   text-align: center;
@@ -114,9 +125,9 @@ html{
 }
 
 .magazine-cover__blurred-title {
-  font-family: "Silk Serif ExtraLight",serif;
-  font-size: 18rem;
+  font-family: "Silk-Serif", serif;
   font-weight: 100;
+  font-size: 18rem;
   position: absolute;
   z-index: 2;
   top: -12.6rem;
@@ -191,13 +202,15 @@ html{
 }
 
 .dispocomponent{
-  font-family: "Silk Serif ExtraLight", serif;
+  font-family: "Silk-Serif", serif;
+  font-weight: 100;
   font-size: 4rem;
   text-transform: uppercase;
   text-align: center;
 }
 .aviscomponent{
-  font-family: "Silk Serif ExtraLight", serif;
+  font-family: "Silk-Serif", serif;
+  font-weight: 100;
   font-size: 4rem;
   text-transform: uppercase;
   text-align: center;

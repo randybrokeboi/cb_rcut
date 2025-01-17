@@ -1,5 +1,5 @@
 import pinned from './assets/pinnedvideocut.mp4'
-import "../silk-serif/Silk Serif Light.otf";
+import "../silk-serif/Silk-Serif-Light.otf";
 import './App.css'
 import {Calendly} from './calendly.jsx';
 
@@ -17,38 +17,37 @@ function App() {
     </nav>
   <div className="magazine-cover__title text-center">
         <span>CB RCUT</span>
+  </div>
+    <h1 className="magazine-cover__subtitle">
+      Tentez l&#39;expérience
+    </h1>
+    <div className="magazine-cover__image-wrapper">
+      <div className="magazine-cover__art">
+        <video src={pinned} autoPlay loop playsInline muted preload className="magazine-cover__image"/>
       </div>
-      <h1 className="magazine-cover__subtitle">
-        Tentez l&#39;expérience
-      </h1>
-      <div className="magazine-cover__image-wrapper">
-        <div className="magazine-cover__art">
-          <video src={pinned} autoPlay loop playsInline muted preload className="magazine-cover__image"/>
-        </div>
-        <div className="magazine-cover__blurred-title">CB RCUT</div>
+      <div className="magazine-cover__blurred-title">CB RCUT</div>
+    </div>
+    <div id="dispo" className="text-center dispocomponent mt-32">
+      <div className="border-b-2 border-black">Voici mes disponibilités</div>
+      <div className="mt-8 content-center">
+        <Calendly />
       </div>
-      <div id="dispo" className="text-center dispocomponent mt-32">
-        <div className="border-b-2 border-black">Voici mes disponibilités</div>
-        <div className="mt-8 content-center">
-          <Calendly />
-        </div>
-      </div>
-      <div id="avis" className="text-center aviscomponent mt-32">
-        <div className="border-b-2 border-black">Avis Clients</div>
-        <div className="mt-8 mb-14 content-center">
-          <div className="vision">
-            <div className="moving">
-              <span>Le meilleur Barber de Nice 🙏🏾</span>
-              <span>La daronne a validé 🤞🏾</span>
-              <span>Aucun Flop</span>
-              <span>Allez-y les yeux fermés</span>
-              <span>Du bon boulot </span>
-              <span>Le meilleur Barber de Nice 🙏🏾</span>
-            </div>
+    </div>
+    <div id="avis" className="text-center aviscomponent mt-32">
+      <div className="border-b-2 border-black">Avis Clients</div>
+      <div className="mt-8 mb-14 content-center">
+        <div className="vision">
+          <div className="moving">
+            <span>Le meilleur Barber de Nice 🙏🏾</span>
+            <span>La daronne a validé 🤞🏾</span>
+            <span>Aucun Flop</span>
+            <span>Allez-y les yeux fermés</span>
+            <span>Du bon boulot </span>
+            <span>Le meilleur Barber de Nice 🙏🏾</span>
           </div>
         </div>
       </div>
-      <div></div>
+    </div>
     </>
   )
 }
