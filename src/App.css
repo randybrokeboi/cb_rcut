@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Black";   /*Can be any text*/
+  src: local("Silk Serif Black"),
+  url("silk-serif/Silk Serif Black.otf") format("truetype");
+}
+@font-face {
+  font-family: "Black Italic";   /*Can be any text*/
+  src: local("Silk Serif Black Italic"),
+  url("silk-serif/Silk Serif Black Italic.otf") format("truetype");
+}
+@font-face {
+  font-family: "Bold";   /*Can be any text*/
+  src: local("Silk Serif Bold"),
+  url("silk-serif/Silk Serif Bold.otf") format("truetype");
+}
+@font-face {
+  font-family: "Bold Italic";   /*Can be any text*/
+  src: local("Silk Serif Bold Italic"),
+  url("silk-serif/Silk Serif Bold Italic.otf") format("truetype");
+}
+@font-face {
+  font-family: "ExtraLight";   /*Can be any text*/
+  src: local("Silk Serif ExtraLight"),
+  url("silk-serif/Silk Serif ExtraLight.otf") format("truetype");
+}
+@font-face {
+  font-family: "ExtraLight Italic";   /*Can be any text*/
+  src: local("Silk Serif ExtraLight Italic"),
+  url("silk-serif/Silk Serif ExtraLight Italic.otf") format("truetype");
+}
+@font-face {
+  font-family: "Light";   /*Can be any text*/
+  src: local("Silk Serif Light"),
+  url("silk-serif/Silk Serif Light.otf") format("truetype");
+}
+@font-face {
+  font-family: "Light Italic";   /*Can be any text*/
+  src: local("Silk Serif Light Italic"),
+  url("silk-serif/Silk Serif Light Italic.otf") format("truetype");
+}
+@font-face {
+  font-family: "Medium";   /*Can be any text*/
+  src: local("Silk Serif Medium"),
+  url("silk-serif/Silk Serif Medium.otf") format("truetype");
+}
+@font-face {
+  font-family: "Medium Italic";   /*Can be any text*/
+  src: local("Silk Serif Medium Italic"),
+  url("silk-serif/Silk Serif Medium Italic.otf") format("truetype");
+}
+@font-face {
+  font-family: "Regular";   /*Can be any text*/
+  src: local("Silk Serif Regular"),
+  url("silk-serif/Silk Serif Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "Regular Italic";   /*Can be any text*/
+  src: local("Silk Serif Regular Italic"),
+  url("silk-serif/Silk Serif Regular Italic.otf") format("truetype");
+}
+@font-face {
+  font-family: "SemiBold";   /*Can be any text*/
+  src: local("Silk Serif SemiBold"),
+  url("silk-serif/Silk Serif SemiBold.otf") format("truetype");
+}
+@font-face {
+  font-family: "SemiBold Italic";   /*Can be any text*/
+  src: local("Silk Serif SemiBold Italic"),
+  url("silk-serif/Silk Serif SemiBold Italic.otf") format("truetype");
+}
+
+.card {
+  padding: 2em;
+}
+html{
+  font-size: 10px;
+}
+
+.magazine-cover__title{
+  font-size: 18rem;
+  margin-top: 10rem;
+  margin-bottom: -14.4rem;
+  font-family: ExtraLight,serif;
+  position: relative;
+  z-index: -1;
+  text-align: center;
+  letter-spacing: -0.25rem;
+  text-transform: uppercase;
+}
+
+.magazine-cover__art {
+  top: 2.50rem;
+  left: 2.50rem;
+  width: calc(100% - 5rem);
+  height: calc(100% - 5rem);
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
+.magazine-cover__image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  --overflow: 120px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.magazine-cover__blurred-title {
+  font-family: ExtraLight,serif;
+  font-size: 18rem;
+  font-weight: 100;
+  position: absolute;
+  z-index: 2;
+  top: -12.6rem;
+  right: 0;
+  left: 0;
+  text-align: center;
+  letter-spacing: -0.25rem;
+  text-transform: uppercase;
+  filter: blur(2px);
+}
+
+.magazine-cover__subtitle {
+  color: #e2dfdf;
+  font-size: 3rem;
+  font-weight: normal;
+  position: absolute;
+  z-index: 1;
+  top: 31rem;
+  right: 0;
+  left: 0;
+  max-width: 55rem;
+  margin: 0 auto;
+  transition: filter .5s ease;
+  transition-delay: .5s;
+  text-align: center;
+  text-transform: uppercase;
+  filter: blur(0.5px);
+}
+
+.magazine-cover__image-wrapper {
+  background-color: #e2dfdf;
+  max-width: 120rem;
+  height: 120rem;
+  margin: 0 auto;
+  padding-top: min(15 / 12 * 100%, 97.5rem);
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.top-nav {
+  font-family: "Helvetica Neue", serif;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-right: 0;
+  padding-left: 0;
+  background-color: transparent;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  font-size: 2.50rem;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.top-nav__brand {
+  text-decoration: none;
+  justify-self: start;
+  display: flex;
+  align-items: center;
+}
+
+.top-nav__brand svg {
+  width: 1.5ch;
+  margin-right: .5ch;
+  animation: svg-rotate 10s linear infinite;
+}
+
+.dispocomponent{
+  font-family: ExtraLight, serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.aviscomponent{
+  font-family: ExtraLight, serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.vision{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  height: 3rem;
+  font-size: 3rem;
+  line-height: 1em;
+  overflow: hidden;
+}
+.moving{
+  padding-top: 4px;
+  display: flex;
+  flex-flow: column nowrap;
+  transform: translateY(0);
+  animation: slide-up 22s infinite;
+  text-align: center;
+}
+
+@keyframes slide-up {
+  0%, 15%{
+    transform: translateY(0%);
+  }
+  20%, 35%{
+    transform: translateY(-100%);
+  }
+  40%, 55%{
+    transform: translateY(-200%);
+  }
+  60%, 75%{
+    transform: translateY(-300%);
+  }
+  80%, 95%{
+    transform: translateY(-400%);
+  }
+  99%, 100%{
+    transform: translateY(-500%);
+  }
+}
